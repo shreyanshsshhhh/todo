@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="lavender">
+        <div class="theme">
+          <span class="theme-icon"></span>
+          <div class="theme-selector">
+            <span class="lavender-theme" onclick="theme(0)"></span>
+            <span class="orange-theme" onclick="theme(1)"></span>
+            <span class="aqua-theme" onclick="theme(2)"></span>
+            <span class="lime-theme" onclick="theme(3)"></span>
+          </div>
+        </div>
+      </div>
+    <div class="home"><a href="index.html"><img id="home-img" src="public/images/to-do-list.png" alt=""></a></div>
+    <div class="lightOrDark" onclick="lightDarkToggle(0)">☀︎</div>
+    <div class="heading">
+        <h3>calendar</h3>
+    </div>
+    
+    <body class="light">
+    <div class="cal">
+        <div class="calendar">
+            <div class="calendar-header">
+                <span class="month-picker" id="month-picker">April</span>
+                <div class="year-picker">
+                    <span class="year-change" id="prev-year">
+                        <pre><</pre>
+                    </span>
+                    <span id="year">2022</span>
+                    <span class="year-change" id="next-year">
+                        <pre>></pre>
+                    </span>
+                </div>
+            </div>
+            <div class="calendar-body">
+                <div class="calendar-week-day">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="calendar-days lavender"></div>
+            </div>
+           
+            <div class="month-list"></div>
+        </div>
+    </div>   
+    <script src="calendar.js"></script>
+</body>
+</html>
+
+
+
+    
+    
